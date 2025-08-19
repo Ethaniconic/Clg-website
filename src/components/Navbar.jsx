@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from './Carousel'
 import Logo from '../assets/Logo.png'
 import YearMonthForm from './YearMonthForm'
+import Card from './Card'
 
 const Navbar = () => {
     return (
@@ -9,7 +10,7 @@ const Navbar = () => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="navbar sticky top-0 z-50 w-full bg-primary/90 backdrop-blur-md text-base-100 text-[20px] shadow-xl px-4 md:px-10 rounded-b-2xl">
+                <div className="navbar sticky top-0 z-50 w-full bg-[#050a30] shadow-lg px-4 md:px-16 py-3 flex items-center justify-between rounded-b-2xl border-b border-blue-900/60">
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg
@@ -34,16 +35,17 @@ const Navbar = () => {
                     <div className="hidden flex-none lg:block">
                         <ul className="menu menu-horizontal gap-2">
                             {/* Navbar menu content here */}
-                            <li><a className="hover:text-accent focus-visible:text-accent">Home</a></li>
-                            <li><a className="hover:text-accent focus-visible:text-accent">About Us</a></li>
-                            <li><a className="hover:text-accent focus-visible:text-accent">Events</a></li>
-                            <li><a className="hover:text-accent focus-visible:text-accent">Contacts</a></li>
+                            <li><a className="text-blue-100 hover:text-blue-400 transition-colors duration-200 font-medium">Home</a></li>
+                            <li><a className="text-blue-100 hover:text-blue-400 transition-colors duration-200 font-medium">Magazines</a></li>
+                            <li><a className="text-blue-100 hover:text-blue-400 transition-colors duration-200 font-medium">Events</a></li>
+                            <li><a className="text-blue-100 hover:text-blue-400 transition-colors duration-200 font-medium">Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div className="px-4 md:px-8">
                     <Carousel />
                     <YearMonthForm />
+                    <Card />
                 </div>
             </div>
             <div className="drawer-side h-full">
