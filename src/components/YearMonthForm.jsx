@@ -8,8 +8,8 @@ const YearMonthForm = () => {
         <label className="label">
           <span className="label-text text-primary font-semibold">Year</span>
         </label>
-        <select className="select select-bordered select-primary focus:outline-none">
-          <option disabled selected>
+        <select className="select select-bordered select-primary focus:outline-none text-zinc-100">
+          <option disabled selected className="text-zinc-200">
             Pick a year
           </option>
           <option>2022</option>
@@ -23,8 +23,8 @@ const YearMonthForm = () => {
         <label className="label">
           <span className="label-text text-primary font-semibold">Month</span>
         </label>
-        <select className="select select-bordered select-primary focus:outline-none">
-          <option disabled selected>
+        <select className="select select-bordered select-primary focus:outline-none text-zinc-100">
+          <option disabled selected className="text-zinc-200">
             Pick a month
           </option>
           <option>January</option>
