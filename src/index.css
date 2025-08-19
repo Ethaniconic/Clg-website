@@ -7,3 +7,9 @@
 html, body, #root{
     height: 100%;
 }
+
+@media screen and (max-width: 700px){
+    .carousel{
+        width: 100vw;
+    }
+}
