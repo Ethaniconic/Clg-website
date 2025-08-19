@@ -8,9 +8,9 @@ const Navbar = () => {
     return (
         <div className="drawer">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col">
+            <div className="drawer-content flex flex-col min-h-screen">
                 {/* Navbar */}
-                <div className="navbar sticky top-0 z-50 w-full bg-[#050a30] shadow-lg px-4 md:px-16 py-3 flex items-center justify-between rounded-b-2xl border-b border-blue-900/60">
+                <div className="navbar fixed top-0 left-0 right-0 z-50 w-full bg-[#050a30] shadow-lg px-4 md:px-16 py-3 flex items-center justify-between rounded-b-2xl border-b border-blue-900/60">
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg
@@ -42,13 +42,18 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="px-4 md:px-8">
+                {/* Add padding to push content below fixed navbar */}
+                <div className="pt-[84px] flex-1 px-4 md:px-8">
                     <Carousel />
                     <YearMonthForm />
                     <Card />
                 </div>
+                {/* Footer */}
+                <footer className="w-full bg-[#050a30] text-blue-200 text-center py-4 border-t border-blue-900/60 mt-8">
+                    © 2025 College Magazine. All rights reserved.
+                </footer>
             </div>
-            <div className="drawer-side h-full">
+            <div className="drawer-side h-full z-[100]">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay h-full"></label>
                 <ul className="menu menu-lg min-h-full w-80 p-4 bg-base-100/95 backdrop-blur-md text-primary rounded-r-2xl shadow-2xl ring-1 ring-primary/10 gap-1 overflow-y-auto">
                     {/* Sidebar content here */}
