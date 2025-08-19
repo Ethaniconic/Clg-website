@@ -1,4 +1,6 @@
 import React from 'react'
+import Carousel from './Carousel'
+import Logo from '../assets/logo.png'
 
 const Navbar = () => {
     return (
@@ -24,20 +26,24 @@ const Navbar = () => {
                             </svg>
                         </label>
                     </div>
-                    <div className="mx-2 flex-1 px-2">Navbar Title</div>
+                    <div className="mx-2 flex-1 px-2">
+                        <img src={Logo} width={'50px'} alt="Clg_logo" />
+                    </div>
                     <div className="hidden flex-none lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
-                            <li><a>Navbar Item 1</a></li>
-                            <li><a>Navbar Item 2</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Events</a></li>
+                            <li><a>Contacts</a></li>
                         </ul>
                     </div>
                 </div>
-                
+                <Carousel />
             </div>
-            <div className="drawer-side">
-                <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu min-h-full w-80 p-4">
+            <div className="drawer-side h-full">
+                <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay h-full"></label>
+                <ul className="menu min-h-full w-80 p-4 bg-base-300 overflow-y-auto">
                     {/* Sidebar content here */}
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
