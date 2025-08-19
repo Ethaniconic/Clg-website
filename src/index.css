@@ -4,8 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root{
+html, body, #root {
     height: 100%;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+    font-family: 'Poppins', ui-sans-serif, system-ui;
+    color: #1e293b;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 700px){
