@@ -1,27 +1,31 @@
 import React, { useEffect, useRef, useState } from 'react'
+import FirstPage from "../assets/FirstPage.png"
+import SecondPage from "../assets/SecondPage.png"
+import ThirdPage from "../assets/ThirdPage.png"
+import FourthPage from "../assets/FourthPage.png"
 
 const slides = [
     {
         id: "slide1",
-        img: "https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp",
+        img: `${FirstPage}`,
         prev: "slide4",
         next: "slide2"
     },
     {
         id: "slide2",
-        img: "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp",
+        img: `${SecondPage}`,
         prev: "slide1",
         next: "slide3"
     },
     {
         id: "slide3",
-        img: "https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp",
+        img: `${ThirdPage}`,
         prev: "slide2",
         next: "slide4"
     },
     {
         id: "slide4",
-        img: "https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp",
+        img: `${FourthPage}`,
         prev: "slide3",
         next: "slide1"
     }
@@ -42,7 +46,7 @@ const Carousel = () => {
 
     return (
         <div className="flex justify-center items-center mt-8 w-full">
-            <div className="carousel w-[60vw] h-[70vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
+            <div className="carousel w-[60vw] h-[90vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
                 {slides.map((slide, idx) => (
                     <div
                         key={slide.id}
