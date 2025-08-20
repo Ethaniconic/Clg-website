@@ -55,16 +55,36 @@ const Navbar = () => {
                     © 2025 College Magazine. All rights reserved.
                 </footer> */}
 
-                
+
             </div>
             <div className="drawer-side h-full z-[100]">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay h-full"></label>
-                <ul className="menu menu-lg min-h-full w-80 p-4 bg-base-100/95 backdrop-blur-md text-primary rounded-r-2xl shadow-2xl ring-1 ring-primary/10 gap-1 overflow-y-auto">
+                <ul className="menu menu-lg min-h-full w-80 p-4 bg-base-100/90 backdrop-blur-md rounded-r-2xl shadow-2xl ring-1 ring-primary/10 gap-2 overflow-y-auto">
                     {/* Sidebar content here */}
-                    <li><a className="hover:text-accent">Home</a></li>
-                    <li><a className="hover:text-accent">About Us</a></li>
-                    <li><a className="hover:text-accent">Events</a></li>
-                    <li><a className="hover:text-accent">Contacts</a></li>
+                    <div className='flex items-center gap-2 mb-4'>
+                        <img src={Logo} alt="" width="70px" />
+                        <h3>St. Vincent Pallotti College of Engineering and Technology</h3>
+                    </div>
+                    <li>
+                        <a className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                            Contacts
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
