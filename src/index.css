@@ -16,4 +16,8 @@ html, body, #root {
     .carousel{
         width: 100vw;
     }
+
+    .form{
+        background-size: cover;
+    }
 }

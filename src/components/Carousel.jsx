@@ -41,17 +41,17 @@ const Carousel = () => {
     const goTo = (idx) => setCurrent(idx);
 
     return (
-        <div className="w-full flex justify-center items-center mt-8">
-            <div className="carousel w-full max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-primary/10 relative">
+        <div className="flex justify-center items-center mt-8 w-full">
+            <div className="carousel w-[60vw] h-[70vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
                 {slides.map((slide, idx) => (
                     <div
                         key={slide.id}
                         id={slide.id}
-                        className={`carousel-item absolute w-full h-full transition-opacity duration-700 ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                        className={`carousel-item absolute w-full h-full transition-opacity duration-700 flex justify-center items-center ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                     >
                         <img
                             src={slide.img}
-                            className="w-full h-full object-center object-cover"
+                            className="object-center object-cover w-full h-full mx-auto"
                             alt={`Slide ${idx + 1}`}
                         />
                         <div className="absolute left-4 right-4 bottom-4 flex justify-between">
