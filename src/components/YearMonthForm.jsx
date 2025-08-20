@@ -1,8 +1,9 @@
 import React from "react";
+import WatermarkBg from '../assets/WatermarkBg.jpg';
 
 const YearMonthForm = () => {
   return (
-    <form className="bg-[url(C:\Users\Lenovo\OneDrive\Documents\Clg-website-reactjs\src\assets\Watermarked-bg.jpg)] bg-center  bg-no-repeat h-auto flex flex-col md:flex-row gap-6 items-center justify-center my-10 bg-base-100/70 backdrop-blur-md p-6 rounded-2xl shadow-xl ring-1 ring-primary/10 form">
+    <form className="bg-center  bg-no-repeat h-auto flex flex-col md:flex-row gap-6 items-center justify-center my-10 bg-base-100/70 backdrop-blur-md p-6 rounded-2xl shadow-xl ring-1 ring-primary/10 form" style={{backgroundImage: `url(${WatermarkBg})`}}>
       {/* Year Dropdown */}
       <div className="form-control w-full max-w-xs">
         <label className="label">
