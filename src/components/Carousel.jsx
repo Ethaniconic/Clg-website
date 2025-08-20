@@ -46,7 +46,7 @@ const Carousel = () => {
 
     return (
         <div className="flex justify-center items-center mt-8 w-full">
-            <div className="carousel w-[60vw] h-[90vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
+            <div className="carousel w-[50vw] h-[100vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
                 {slides.map((slide, idx) => (
                     <div
                         key={slide.id}
@@ -55,7 +55,7 @@ const Carousel = () => {
                     >
                         <img
                             src={slide.img}
-                            className="object-center object-cover w-full h-full mx-auto"
+                            className="object-fit w-full h-full mx-auto"
                             alt={`Slide ${idx + 1}`}
                         />
                         <div className="absolute left-4 right-4 bottom-4 flex justify-between">
