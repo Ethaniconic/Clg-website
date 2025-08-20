@@ -49,9 +49,13 @@ const Navbar = () => {
                     <Card />
                 </div>
                 {/* Footer */}
-                <footer className="w-full bg-[#050a30] text-blue-200 text-center py-4 border-t border-blue-900/60 mt-8">
+
+
+                {/* <footer className="w-full bg-[#050a30] text-blue-200 text-center py-4 border-t border-blue-900/60 mt-8">
                     © 2025 College Magazine. All rights reserved.
-                </footer>
+                </footer> */}
+
+                
             </div>
             <div className="drawer-side h-full z-[100]">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay h-full"></label>
