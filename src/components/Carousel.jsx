@@ -57,7 +57,7 @@ const Carousel = () => {
                             src={slide.img}
                             className="object-fit w-full h-full mx-auto"
                             alt={`Slide ${idx + 1}`}
-                            loading="eager"
+                            loading="lazy"
                         />
                         <div className="absolute left-4 right-4 bottom-4 flex justify-between">
                             <button
