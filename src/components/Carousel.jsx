@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import FirstPage from "../assets/FirstPage.png"
-import SecondPage from "../assets/SecondPage.png"
-import ThirdPage from "../assets/ThirdPage.png"
-import FourthPage from "../assets/FourthPage.png"
+import FirstPage from "../assets/FirstPage.webp"
+import SecondPage from "../assets/SecondPage.webp"
+import ThirdPage from "../assets/ThirdPage.webp"
+import FourthPage from "../assets/FourthPage.webp"
 
 const slides = [
     {
