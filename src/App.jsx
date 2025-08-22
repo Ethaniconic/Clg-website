@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Magazines from './components/Magazines'
 import Events from './components/Events'
-// import Contact from './components/Contact'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/magazines" element={<Magazines />} />
             <Route path="/events" element={<Events />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
