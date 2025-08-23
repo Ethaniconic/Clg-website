@@ -6,19 +6,19 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Magazines from './components/Magazines'
 import Events from './components/Events'
-// import Contact from './components/Contact'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
     <Router>
-      <div className='min-h-screen overflow-x-hidden bg-zinc-200 flex flex-col'>
+      <div className='min-h-screen overflow-x-hidden bg-zinc-200 flex flex-col items-center'>
         <Navbar />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/magazines" element={<Magazines />} />
             <Route path="/events" element={<Events />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
