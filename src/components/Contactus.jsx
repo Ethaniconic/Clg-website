@@ -41,6 +41,7 @@ export default function Contact() {
         <div className="bg-[#050a30] p-8 rounded-lg shadow-xl w-full max-w-md md:w-2/5 border border-blue-900/60">
           <h2 className="text-2xl font-bold text-center mb-6 text-blue-100">Contact Us</h2> {/* Text color for heading */}
           <form onSubmit={onSubmit} className="space-y-4"> {/* Spacing for form elements */}
+            <input type="hidden" name="access_key" value="d391b3c6-e436-464f-b61e-ee12a0f74f24"></input>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-blue-200 mb-1">Name</label> {/* Text color for labels */}
               <input
