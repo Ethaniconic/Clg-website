@@ -15,18 +15,35 @@ body {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background: #ffff;
+    background: #f1f1f1; /* Lighter grey background to make the magazine pop */
     padding: 1rem;
 }
 
-.flipbook-container {
+.magazine-wrapper {
     width: 100%;
-    max-width: 1200px; /* Adjust max-width as needed */
+    max-width: 1200px;
     margin: auto;
     background: #fff;
-    border-radius: 5px;
-    padding: 25px;
+    border-radius: 8px;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Keeps the child elements within the rounded corners */
+}
+
+.tab-container {
+    padding: 1rem 1rem 0 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #f9fafb; /* A slightly off-white background for the tabs */
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tabs {
+    display: inline-flex;
+}
+
+.flipbook-container {
+    padding: 1rem;
+    position: relative;
 }
 
 .flipbook {
@@ -42,19 +59,8 @@ body {
     border: none;
 }
 
-.flipbook .hard small {
-    font-style: italic;
-    font-weight: lighter;
-    opacity: 0.7;
-    font-size: 14px;
-}
-
 .flipbook .page {
     background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.11);
 }
 
@@ -64,19 +70,16 @@ body {
     object-fit: cover;
 }
 
-.flipbook .page small {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.tab-container {
+.flipbook-nav {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
     width: 100%;
-    max-width: 1200px;
-    margin-bottom: 1rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    z-index: 100;
+    padding: 0 1rem;
+    pointer-events: none; /* Allow clicks to pass through the container */
 }
 
-.tabs {
-    display: inline-flex; /* Allow tabs to not wrap and instead scroll */
+.flipbook-nav .btn {
+    pointer-events: auto; /* Make buttons clickable */
 }
