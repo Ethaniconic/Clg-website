@@ -63,6 +63,16 @@ export default function Contact() {
               />
             </div>
             <div>
+              <label htmlFor="mobile" className="block text-sm font-medium text-blue-200 mb-1">Mobile</label> {/* Text color for labels */}
+              <input
+                type="number"
+                id="mobile"
+                name="mobile"
+                required
+                className="w-full px-4 py-2 border border-blue-800 rounded-md bg-blue-950 text-blue-100 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+            <div>
               <label htmlFor="message" className="block text-sm font-medium text-blue-200 mb-1">Message</label>
               <textarea
                 id="message"
