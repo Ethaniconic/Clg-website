@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/Logo.jpeg'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -28,9 +28,16 @@ const Navbar = () => {
                         </label>
                     </div>
                     {/* Logo and Title */}
-                    <div className="mx-2 flex-1 px-2 flex items-center gap-3">
-                        <img src={Logo} width={'64px'} className='bg-blue-500/90 p-1 rounded-full shadow-[0_15px_25px_-20px_rgb(255,255,255,1)] ring-2 ring-accent/50' alt="Clg_logo" />
-                        <span className='sm:block text-xl md:text-2xl font-semibold tracking-tight text-blue-100'>St. Vincent Pallotti College</span>
+                    <div className="flex-1 px-0 flex items-center gap-2">
+                        <img
+                            src={Logo}
+                            width={'44px'}
+                            className="ml-1 bg-blue-500/90 p-1 rounded-full shadow-[0_15px_25px_-20px_rgb(255,255,255,1)] ring-2 ring-accent/50"
+                            alt="College_logo"
+                        />
+                        <span className="sm:block text-base md:text-lg font-semibold tracking-tight text-blue-100">
+                            St. Vincent Pallotti College of Engineering & Technology - Department of Computer Engineering
+                        </span>
                     </div>
                     {/* Desktop Menu */}
                     <div className="hidden flex-none lg:block">
