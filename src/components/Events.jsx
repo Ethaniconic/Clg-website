@@ -2,33 +2,33 @@ import React from "react";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
-    caption: "Annual Tech Fest 2024",
+    src: "src/assets/IDEA3_1.webp",
+    caption: "IDEA3",
     ratio: "row-span-2 col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-    caption: "Research Symposium",
+    src: "src/assets/IDEA3_2.webp",
+    caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-    caption: "Alumni Meet",
+    src: "src/assets/IDEA3_3.webp0",
+    caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80",
+    src: "",
     caption: "Sports Day",
-    ratio: "row-span-2 col-span-1",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1465101178521-c1a6bca7a0c1?auto=format&fit=crop&w=400&q=80",
-    caption: "Freshers' Welcome",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80",
-    caption: "Cultural Night",
+    src: "src/assets/IDEA3_4.webp",
+    caption: "IDEA3",
+    ratio: "row-span-1 col-span-2",
+  },
+  {
+    src: "src/assets/IDEA3_3.webp",
+    caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
