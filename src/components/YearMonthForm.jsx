@@ -3,18 +3,35 @@ import WatermarkBg from "../assets/WatermarkBg.jpg";
 
 const YearMonthForm = () => {
   const [selectedYear, setSelectedYear] = useState("");
+  const [selectedMonth, setSelectedMonth] = useState("");
 
   const allMonths = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
 
-  // If year is 2023-2024, only show one option
+  // Special month list if year is 2023-2024
   const monthOptions =
     selectedYear === "2023-2024" ? ["Jan - Dec"] : allMonths;
 
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevent page reload
+
+    // Check condition
+    if (selectedYear === "2023-2024" && selectedMonth === "Jan - Dec") {
+      // Open the HTML file in the same tab
+      window.location.href = "/mindroid_23-24.html";
+
+      // Or open in new tab:
+      // window.open("/mindroid_23-24.html", "_blank");
+    } else {
+      alert(`Selected: ${selectedYear} - ${selectedMonth}`);
+    }
+  };
+
   return (
     <form
+      onSubmit={handleSubmit}
       className="bg-center bg-no-repeat h-auto flex flex-col md:flex-row gap-6 items-center justify-center my-10 bg-base-100/70 backdrop-blur-md p-6 rounded-2xl shadow-xl ring-1 ring-primary/10 form"
       style={{ backgroundImage: `url(${WatermarkBg})` }}
     >
@@ -26,11 +43,12 @@ const YearMonthForm = () => {
         <select
           className="select select-bordered select-primary bg-[#050a30] focus:outline-none text-zinc-100"
           value={selectedYear}
-          onChange={(e) => setSelectedYear(e.target.value)}
+          onChange={(e) => {
+            setSelectedYear(e.target.value);
+            setSelectedMonth(""); // reset month when year changes
+          }}
         >
-          <option value="" disabled>
-            Pick a year
-          </option>
+          <option value="" disabled>Pick a year</option>
           <option>2022</option>
           <option>2023-2024</option>
           <option>2025</option>
@@ -44,10 +62,10 @@ const YearMonthForm = () => {
         </label>
         <select
           className="select select-bordered select-primary bg-[#050a30] focus:outline-none text-zinc-100"
+          value={selectedMonth}
+          onChange={(e) => setSelectedMonth(e.target.value)}
         >
-          <option value="" disabled selected>
-            Pick a month
-          </option>
+          <option value="" disabled>Pick a month</option>
           {monthOptions.map((month, idx) => (
             <option key={idx}>{month}</option>
           ))}
