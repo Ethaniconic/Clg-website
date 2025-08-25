@@ -67,8 +67,8 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/magazines" className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
-                            Magazines
+                        <Link to="/archives" className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                            Archives
                         </Link>
                     </li>
                     <li>
