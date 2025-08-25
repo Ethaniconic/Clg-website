@@ -33,7 +33,7 @@ const magazines = [
         year: "2024",
         cover: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // alumni
     },
-    // {
+    {
     //     title: "Sports Highlights",
     //     description:
     //         "Recap of the most exciting sports events and achievements this season.",
