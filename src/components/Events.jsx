@@ -3,32 +3,32 @@ import React from "react";
 const images = [
   {
     src: "src/assets/IDEA3_1.webp",
-    caption: "Annual Tech Fest 2024",
+    caption: "IDEA3",
     ratio: "row-span-2 col-span-2",
   },
   {
     src: "src/assets/IDEA3_2.webp",
-    caption: "Research Symposium",
+    caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
     src: "src/assets/IDEA3_3.webp0",
-    caption: "Alumni Meet",
+    caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "src/assets/IDEA3_4.webp",
+    src: "",
     caption: "Sports Day",
-    ratio: "row-span-2 col-span-1",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1465101178521-c1a6bca7a0c1?auto=format&fit=crop&w=400&q=80",
-    caption: "Freshers' Welcome",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80",
-    caption: "Cultural Night",
+    src: "src/assets/IDEA3_4.webp",
+    caption: "IDEA3",
+    ratio: "row-span-1 col-span-2",
+  },
+  {
+    src: "src/assets/IDEA3_3.webp",
+    caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
