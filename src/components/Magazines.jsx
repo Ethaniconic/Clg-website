@@ -2,12 +2,12 @@ import React from 'react';
 
 const magazines = [
     {
-        title: "Tech Innovators",
+        title: "Mindroid 2023-24",
         description:
-            "A deep dive into the latest technological advancements and the innovators behind them.",
+            "Digital Magazine",
         month: "June",
         year: "2024",
-        cover: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+        cover: "src/assets/FirstPage.webp",
     },
     {
         title: "Campus Life",
@@ -33,7 +33,7 @@ const magazines = [
         year: "2024",
         cover: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // alumni
     },
-    {
+    //{
     //     title: "Sports Highlights",
     //     description:
     //         "Recap of the most exciting sports events and achievements this season.",
