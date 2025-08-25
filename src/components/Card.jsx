@@ -2,28 +2,28 @@ import React from "react";
 
 const magazines = [
     {
-        title: "Tech Innovators",
-        description:
-            "A deep dive into the latest technological advancements and the innovators behind them.",
-        month: "June",
-        year: "2024",
-        cover: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+        title: "Mindroid 2023-24",
+        // description:
+        //     "A deep dive into the latest technological advancements and the innovators behind them.",
+        month: "Year",
+        year: "2023-24",
+        cover: "images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
     },
     {
-        title: "Campus Life",
+        title: "Old magazine",
         description:
-            "Explore the vibrant campus life, student stories, and upcoming events at our college.",
+            "",
         month: "May",
         year: "2024",
         cover: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80", // campus group
     },
     {
-        title: "Research Review",
+        title: "Old magazine",
         description:
-            "Highlights of groundbreaking research and academic achievements from our faculty and students.",
-        month: "April",
-        year: "2024",
-        cover: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80", // research lab
+            "",
+        month: "month",
+        year: "yrar",
+        cover: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // research lab
     }
 ];
 
