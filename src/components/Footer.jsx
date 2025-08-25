@@ -6,30 +6,32 @@ const Footer = () => {
 
     return (
         <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-8 min-h-32 flex flex-col items-center">
-            <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-6">
-                <nav className="flex flex-col justify-center">
-                    <h6 className="footer-title text-lg font-bold mb-4">Services</h6>
-                    <ul className="space-y-2">
-                        <li><a className="link link-hover">Branding</a></li>
-                        <li><a className="link link-hover">Design</a></li>
-                        <li><a className="link link-hover">Marketing</a></li>
-                        <li><a className="link link-hover">Advertisement</a></li>
-                    </ul>
-                </nav>
-                <nav className="flex flex-col justify-center">
-                    <h6 className="footer-title text-lg font-bold mb-4">Company</h6>
-                    <ul className="space-y-2">
-                        <li><a className="link link-hover">About us</a></li>
-                        <li><a className="link link-hover">Contact</a></li>
-                        <li><a className="link link-hover">Jobs</a></li>
-                        <li><a className="link link-hover">Press kit</a></li>
-                    </ul>
+            <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-6">
+                <nav className="flex flex-col justify-center col-span-1">
+                    <h6 className="footer-title text-base font-bold mb-4">Technical Support</h6>
+                    <div className="flex flex-col space-y-4">
+                        <div className="flex flex-col bg-gray-800/50 p-4 rounded-lg">
+                            <p className="font-semibold text-white text-sm">Swadhin Upadhyay</p>
+                            <a href="mailto:swadhin457@gmail.com" className="text-blue-400 hover:underline text-sm">swadhin457@gmail.com</a>
+                            <a href="tel:+918788546384" className="text-blue-400 hover:underline text-sm">+91 87885 46384</a>
+                        </div>
+                        <div className="flex flex-col bg-gray-800/50 p-4 rounded-lg">
+                            <p className="font-semibold text-white text-sm">Nikita Bhushanwar</p>
+                            <a href="mailto:niktabhushanwar03@gmail.com" className="text-blue-400 hover:underline text-sm">niktabhushanwar03@gmail.com</a>
+                            <a href="tel:+919767445679" className="text-blue-400 hover:underline text-sm">+91 97674 45679</a>
+                        </div>
+                        <div className="flex flex-col bg-gray-800/50 p-4 rounded-lg">
+                            <p className="font-semibold text-white text-sm">Ethan Anthony</p>
+                            <a href="mailto:e10anthony345@gmail.com" className="text-blue-400 hover:underline text-sm">e10anthony345@gmail.com</a>
+                            <a href="tel:+918888080345" className="text-blue-400 hover:underline text-sm">+91 88880 80345</a>
+                        </div>
+                    </div>
                 </nav>
                 {/* Only show the map if NOT on the contact page */}
-                {location.pathname !== "/contact" && (
+                
                     <nav className="flex flex-col justify-center">
                         <h6 className="footer-title text-lg font-bold mb-4">Maps</h6>
-                        <div className="w-full h-32 rounded-lg shadow-lg overflow-hidden border-2 border-blue-600">
+                        <div className="w-full h-64 rounded-lg shadow-lg overflow-hidden border-2 border-blue-600">
                             <iframe
                                 title="SVPCET Location"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29797.59769129945!2d79.047733!3d21.004671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sus!4v1755632701761!5m2!1sen!2sus"
@@ -42,7 +44,7 @@ const Footer = () => {
                             ></iframe>
                         </div>
                     </nav>
-                )}
+                
                 <nav className="flex flex-col items-center justify-center">
                     <h6 className="footer-title text-lg font-bold mb-4">Social</h6>
                     <div className="flex gap-6">
@@ -72,7 +74,7 @@ const Footer = () => {
                                 <path fillRule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clipRule="evenodd"/>
                             </svg>
                         </a>
-                        <a className="hover:scale-110 transition-transform" href="https://www.linkedin.com/school/st-vincent-pallotti-college-of-engineering-and-technology/mycompany/" target="https://www.linkedin.com/school/svpcet/?viewAsMember=true" rel="noopener noreferrer">
+                        <a className="hover:scale-110 transition-transform" href="https://www.linkedin.com/school/st-vincent-pallotti-college-of-engineering-and-technology/mycompany/" target="_blank" rel="noopener noreferrer">
                             {/* LinkedIn SVG */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

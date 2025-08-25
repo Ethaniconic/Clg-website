@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import FirstPage from "../assets/FirstPage.webp"
-import SecondPage from "../assets/SecondPage.webp"
-import ThirdPage from "../assets/ThirdPage.webp"
-import FourthPage from "../assets/FourthPage.webp"
+import SecondPage from "../assets/IV_2A_2025.webp"
+import ThirdPage from "../assets/IV_2b_2025.webp"
+import FourthPage from "../assets/placment_orent.webp"
+import FifthPage from "../assets/ACM_Elections.webp"
 
 const slides = [
     {
@@ -27,6 +28,12 @@ const slides = [
         id: "slide4",
         img: `${FourthPage}`,
         prev: "slide3",
+        next: "slide5"
+    },
+    {
+        id: "slide5",
+        img: `${FifthPage}`,
+        prev: "slide4",
         next: "slide1"
     }
 ];

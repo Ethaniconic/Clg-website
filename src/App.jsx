@@ -11,9 +11,9 @@ import Contactus from './components/Contactus'
 const App = () => {
   return (
     <Router>
-      <div className='min-h-screen overflow-x-hidden bg-zinc-200 flex flex-col items-center'>
+      <div className='overflow-x-hidden bg-zinc-200 flex flex-col items-center'>
         <Navbar />
-        <main className="flex-1">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/archives" element={<Magazines />} />
