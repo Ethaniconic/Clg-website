@@ -5,7 +5,7 @@ const magazines = [
     title: "Mindroid 2025 July-August",
     month: "July-August",
     year: "2025",
-    cover: "../images/MINDROID_2025/MINDROID-2025-JULY.webp",
+    cover: "images/MINDROID_2025/MINDROID-2025-JULY.webp",
     goto: "../../mindroid_25-july.html",
   },
   {
@@ -13,7 +13,7 @@ const magazines = [
     description: "",
     month: "Year",
     year: "2023-24",
-    cover: "./images/MINDROID%202023-24/MINDROID%202023-24_1.webp",
+    cover: "images/MINDROID%202023-24/MINDROID%202023-24_1.webp",
     goto: "../../mindroid_23-24.html",
     },
 ];
