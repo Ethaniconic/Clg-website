@@ -19,12 +19,12 @@ const magazines = [
 ];
 const Card = () => {
   return (
-    <div className="w-full flex flex-col gap-8 items-center my-10 px-2 md:px-16">
+    <div className="w-full flex flex-col gap-8 items-center my-10 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="flex flex-col md:flex-row md:justify-between gap-8 items-center w-full">
         {magazines.map((mag, idx) => {
           const CardContent = (
             <div
-              className="card w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
+              className="card w-full sm:w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
             >
               <figure className="h-48 overflow-hidden rounded-t-3xl">
                 <img

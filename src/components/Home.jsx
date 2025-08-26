@@ -5,7 +5,7 @@ import Card from "./Card";
 
 const Home = () => {
   return (
-    <div className="flex-1 px-4 md:px-8">
+    <div className="flex-1 px-2 sm:px-4 md:px-6 lg:px-8">
       <Carousel />
       <YearMonthForm />
       <Card />

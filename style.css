@@ -83,3 +83,62 @@ body {
 .flipbook-nav .btn {
     pointer-events: auto; /* Make buttons clickable */
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .magazine-wrapper {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .flipbook {
+        height: auto;
+    }
+
+    .flipbook-nav {
+        position: static;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .flipbook-nav .btn {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.25rem;
+    }
+
+    .flipbook-nav .btn {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+    }
+}

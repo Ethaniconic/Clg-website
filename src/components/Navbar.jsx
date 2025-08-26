@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/SVPCET_logo_New.webp'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="navbar fixed top-0 left-0 right-0 z-50 w-full bg-[#050a30] shadow-lg px-4 md:px-16 py-3 flex items-center justify-between rounded-b-2xl border-b border-blue-900/60">
+                <div className="navbar fixed top-0 left-0 right-0 z-50 w-full bg-[#050a30] shadow-lg px-2 sm:px-4 md:px-8 lg:px-16 py-3 flex items-center justify-between rounded-b-2xl border-b border-blue-900/60">
                     {/* Sidebar toggle for mobile */}
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
@@ -51,9 +51,18 @@ const Navbar = () => {
                         </label>
                     </div>
                     {/* Logo and Title */}
-                    <div className="mx-2 flex-1 px-2 flex items-center gap-3">
-                        <img src={Logo} width={'64px'} className='bg-blue-500/90 p-1 rounded-full shadow-[0_15px_25px_-20px_rgb(255,255,255,1)] ring-2 ring-accent/50' alt="Clg_logo" />
-                        <span className='sm:block text-xl md:text-2xl font-semibold tracking-tight text-blue-100'>St. Vincent Pallotti College</span>
+                    <div className="flex-1 px-0 flex items-center gap-2">
+                        <img
+                            src={Logo}
+                            className="w-12 sm:w-16 md:w-20 ml-1"
+                            alt="College_logo"
+                        />
+                        <span className="hidden md:inline text-base md:text-lg font-semibold tracking-tight text-blue-100">
+                            St. Vincent Pallotti College of Engineering & Technology - Department of Computer Engineering
+                        </span>
+                        <span className="inline md:hidden text-base font-semibold tracking-tight text-blue-100">
+                            SVPCET - Dept. of Computer Engineering
+                        </span>
                     </div>
                     {/* Desktop Menu */}
                     <div className="hidden flex-none lg:block">

@@ -10,38 +10,45 @@ const slides = [
         id: "slide1",
         img: `${FirstPage}`,
         prev: "slide4",
-        next: "slide2"
+        next: "slide2",
+        desc: "Mindroid digital magazine 2023-24"
     },
     {
         id: "slide2",
         img: `${SecondPage}`,
         prev: "slide1",
-        next: "slide3"
+        next: "slide3",
+        desc: "Mindroid digital magazine 2023-24",
     },
     {
         id: "slide3",
         img: `${ThirdPage}`,
         prev: "slide2",
-        next: "slide4"
+        next: "slide4",
+        desc: "Mindroid digital magazine 2023-24"
     },
     {
         id: "slide4",
         img: `${FourthPage}`,
         prev: "slide3",
-        next: "slide5"
+        next: "slide5",
+        desc: "Mindroid digital magazine 2023-24"
+
     },
     {
         id: "slide5",
         img: `${FifthPage}`,
         prev: "slide4",
-        next: "slide1"
+        next: "slide1",
+        desc: "Mindroid digital magazine 2023-24"
+
     }
 ];
 
 const Carousel = () => {
     const [current, setCurrent] = useState(0);
     const timeoutRef = useRef(null);
-
+  
     useEffect(() => {
         timeoutRef.current = setTimeout(() => {
             setCurrent((prev) => (prev + 1) % slides.length);
@@ -52,7 +59,10 @@ const Carousel = () => {
     const goTo = (idx) => setCurrent(idx);
 
     return (
-        <div className="flex justify-center items-center mt-8 w-full">
+        <div className="flex flex-col justify-center items-center mt-8 w-full">
+            <div className="flex text-[#050a30] font-bold text-3xl my-4">
+                <h1>MINDROID - Digital Magazine</h1>
+            </div>
             <div className="carousel w-[55vw] h-[80vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl/30 ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
                 {slides.map((slide, idx) => (
                     <div
@@ -66,6 +76,10 @@ const Carousel = () => {
                             alt={`Slide ${idx + 1}`}
                             loading="lazy"
                         />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 flex flex-col bg-black bg-opacity-40 justify-start pt-20 items-center">
+                            <h2 className="text-white text-2xl text-center">{slide.desc}</h2>
+                        </div>
                         <div className="absolute left-4 right-4 bottom-4 flex justify-between">
                             <button
                                 className="btn btn-circle btn-accent"
@@ -93,7 +107,7 @@ const Carousel = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Carousel
+export default Carousel;

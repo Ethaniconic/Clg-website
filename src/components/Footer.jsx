@@ -5,7 +5,7 @@ const Footer = () => {
     const location = useLocation();
 
     return (
-        <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-8 min-h-32 flex flex-col items-center">
+        <footer className="footer sm:footer-horizontal bg-[#050a30] text-base-content p-8 min-h-32 flex flex-col items-center">
             {location.pathname !== "/contact" && (
             <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-6">
                 <nav className="flex flex-col justify-center col-span-1">
@@ -95,7 +95,7 @@ const Footer = () => {
             <hr className="w-full border-t border-white mb-3" />
             <div className="w-full flex justify-center items-center">
                 <span className="text-white text-sm text-center">
-                    © 2025 College Magazine. All rights reserved.
+                    © 2025 Department of Computer Engineering SVPCET, Nagpur . All rights reserved.
                 </span>
             </div>
         </footer>

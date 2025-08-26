@@ -27,7 +27,7 @@ const magazines = [
     {
         title: "Alumni Success",
         description:
-            "Stories of our alumni making a mark in their respective fields.",
+            "",
         month: "March",
         year: "2024",
         cover: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // alumni
