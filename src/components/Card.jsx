@@ -5,7 +5,7 @@ const magazines = [
     title: "Mindroid 2025 July-August",
     month: "July-August",
     year: "2025",
-    cover: "images/MINDROID_2025/MINDROID-2025-JULY.webp",
+    cover: "/images/MINDROID_2025/MINDROID-2025-JULY.webp",
     goto: "../../mindroid_25-july.html",
   },
   {
@@ -13,7 +13,7 @@ const magazines = [
     description: "",
     month: "Year",
     year: "2023-24",
-    cover: "images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
+    cover: "/images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
     goto: "../../mindroid_23-24.html",
     },
 ];
@@ -24,7 +24,7 @@ const Card = () => {
         {magazines.map((mag, idx) => {
           const CardContent = (
             <div
-              className="card w-80 bg-[#10194a] dark:bg-gray-800 shadow-xl border border-primary/20 dark:border-gray-700 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
+              className="card w-80 bg-[#10194a] shadow-xl border border-primary/20 dark:border-gray-700 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
             >
               <figure className="h-48 overflow-hidden rounded-t-3xl">
                 <img

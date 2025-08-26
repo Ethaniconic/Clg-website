@@ -5,7 +5,7 @@ const magazines = [
         title: "Mindroid 2025 July-August",
         month: "July-August",
         year: "2025",
-        cover: "images/MINDROID_2025/MINDROID-2025-JULY.webp",
+        cover: "/images/MINDROID_2025/MINDROID-2025-JULY.webp",
         goto: "/mindroid_25-july.html",
     },
     {
@@ -13,7 +13,7 @@ const magazines = [
         description: "",
         month: "Year",
         year: "2023-24",
-        cover: "images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
+        cover: "/images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
         goto: "/mindroid_23-24.html",
     },
     {
@@ -32,46 +32,6 @@ const magazines = [
         year: "2024",
         cover: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // alumni
     },
-    //{
-    //     title: "Sports Highlights",
-    //     description:
-    //         "Recap of the most exciting sports events and achievements this season.",
-    //     month: "February",
-    //     year: "2024",
-    //     cover: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80", // sports
-    // },
-    // {
-    //     title: "Freshers Edition",
-    //     description:
-    //         "Welcoming the new batch and sharing tips for a successful college journey.",
-    //     month: "January",
-    //     year: "2024",
-    //     cover: "https://images.unsplash.com/photo-1465101178521-c1a6bca7a0c1?auto=format&fit=crop&w=400&q=80", // freshers
-    // },
-    // {
-    //     title: "Tech Innovators",
-    //     description:
-    //         "A deep dive into the latest technological advancements and the innovators behind them.",
-    //     month: "June",
-    //     year: "2024",
-    //     cover: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
-    // },
-    // {
-    //     title: "Campus Life",
-    //     description:
-    //         "Explore the vibrant campus life, student stories, and upcoming events at our college.",
-    //     month: "May",
-    //     year: "2024",
-    //     cover: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80", // campus group
-    // },
-    // {
-    //     title: "Research Review",
-    //     description:
-    //         "Highlights of groundbreaking research and academic achievements from our faculty and students.",
-    //     month: "April",
-    //     year: "2024",
-    //     cover: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80", // research lab
-    // },
 ];
 
 const Magazines = () => {
