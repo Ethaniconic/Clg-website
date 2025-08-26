@@ -15,23 +15,7 @@ const magazines = [
         year: "2023-24",
         cover: "/images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
         goto: "/mindroid_23-24.html",
-    },
-    {
-        title: "Research Review",
-        description:
-            "",
-        month: "April",
-        year: "2024",
-        cover: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80", // research lab
-    },
-    {
-        title: "Alumni Success",
-        description:
-            "",
-        month: "March",
-        year: "2024",
-        cover: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // alumni
-    },
+    }
 ];
 
 const Magazines = () => {

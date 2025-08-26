@@ -43,7 +43,7 @@ const slides = [
         next: "slide1",
         desc: "Mindroid digital magazine 2023-24"
 
-    }
+    },
   {
     id: "slide1",
     img: FirstPage,
@@ -84,15 +84,6 @@ const slides = [
 const Carousel = () => {
     const [current, setCurrent] = useState(0);
     const timeoutRef = useRef(null);
-  
-    useEffect(() => {
-        timeoutRef.current = setTimeout(() => {
-            setCurrent((prev) => (prev + 1) % slides.length);
-        }, 3500); // Change slide every 3.5 seconds
-        return () => clearTimeout(timeoutRef.current);
-    }, [current]);
-  const [current, setCurrent] = useState(0);
-  const timeoutRef = useRef(null);
 
   useEffect(() => {
     timeoutRef.current = setTimeout(() => {
