@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import WatermarkBg from "../assets/WatermarkBg.jpg";
-import mindroid from "../../mindroid_23-24.html"
 
 const YearMonthForm = () => {
   const [selectedYear, setSelectedYear] = useState("");
@@ -21,7 +20,7 @@ const YearMonthForm = () => {
     // Check condition
     if (selectedYear === "2023-2024" && selectedMonth === "Jan - Dec") {
       // Open the HTML file in the same tab
-      window.location.href = mindroid;
+      window.location.href = "/mindroid_23-24.html";
 
       // Or open in new tab:
       // window.open("/mindroid_23-24.html", "_blank");
