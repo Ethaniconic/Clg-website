@@ -5,7 +5,7 @@ const magazines = [
     title: "Mindroid 2025 July-August",
     month: "July-August",
     year: "2025",
-    cover: "/images/MINDROID_2025/MINDROID-2025-JULY.webp",
+    cover: "./images/MINDROID_2025/MINDROID-2025-JULY.webp",
     goto: "../../mindroid_25-july.html",
   },
   {
@@ -13,7 +13,7 @@ const magazines = [
     description: "",
     month: "Year",
     year: "2023-24",
-    cover: "/images/MINDROID 2023-24/MINDROID 2023-24_1.webp",
+    cover: "./images/MINDROID%202023-24/MINDROID%202023-24_1.webp",
     goto: "../../mindroid_23-24.html",
     },
 ];
@@ -24,7 +24,7 @@ const Card = () => {
         {magazines.map((mag, idx) => {
           const CardContent = (
             <div
-              className="card w-80 bg-[#10194a] shadow-xl border border-primary/20 dark:border-gray-700 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
+              className="card w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
             >
               <figure className="h-48 overflow-hidden rounded-t-3xl">
                 <img
@@ -34,10 +34,10 @@ const Card = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-blue-200 dark:text-white">{mag.title}</h2>
-                <p className="text-blue-100 dark:text-gray-300">{mag.description}</p>
+                <h2 className="card-title text-blue-200">{mag.title}</h2>
+                <p className="text-blue-100">{mag.description}</p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="badge bg-blue-900 text-blue-100 dark:bg-gray-700 dark:text-gray-200 border-blue-700 dark:border-gray-600 px-3 py-2">
+                  <span className="badge bg-blue-900 text-blue-100 border-blue-700 dark:border-gray-600 px-3 py-2">
                     {mag.month} {mag.year}
                   </span>
                 </div>
