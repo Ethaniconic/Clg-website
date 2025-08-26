@@ -38,7 +38,7 @@ export default function Contact() {
         {/* Main content grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left column for form */}
-          <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-gray-300">
+          <div className="bg-[#050a30] backdrop-blur-sm p-8 rounded-lg shadow-lg border border-blue-300">
             <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
             <form onSubmit={onSubmit} className="space-y-6">
               <input type="hidden" name="access_key" value="d391b3c6-e436-464f-b61e-ee12a0f74f24"></input>
@@ -49,7 +49,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md bg-gray-800/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                  className="w-full px-4 py-3 border border-blue-500 rounded-md bg-blue-700/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
                   placeholder="Enter your name"
                 />
               </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md bg-gray-800/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                  className="w-full px-4 py-3 border border-blue-500 rounded-md bg-blue-700/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
                   placeholder="Enter your email"
                 />
               </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                   id="mobile"
                   name="mobile"
                   required
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md bg-gray-800/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                  className="w-full px-4 py-3 border border-blue-500 rounded-md bg-blue-700/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
                   placeholder="Enter your mobile number"
                 />
               </div>
@@ -82,7 +82,7 @@ export default function Contact() {
                   name="message"
                   required
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md bg-gray-800/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out resize-none"
+                  className="w-full px-4 py-3 border border-blue-500 rounded-md bg-blue-700/60 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out resize-none"
                   placeholder="Your message"
                 ></textarea>
               </div>
@@ -98,7 +98,7 @@ export default function Contact() {
 
           {/* Right column for map and address */}
           <div className="flex flex-col gap-8">
-            <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg shadow-lg h-full flex flex-col border border-gray-300">
+            <div className="bg-[#050a30] backdrop-blur-sm p-8 rounded-lg shadow-lg h-full flex flex-col border border-blue-300">
               <h2 className="text-2xl font-bold text-white mb-4">Our Location</h2>
               <div className="flex-grow rounded-md overflow-hidden">
                 <iframe
@@ -120,21 +120,21 @@ export default function Contact() {
         </div>
 
         {/* Technical Support Section */}
-        <div className="mt-12 bg-gray-900/50 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-gray-300">
+        <div className="mt-12 bg-[#050a30] backdrop-blur-sm p-8 rounded-lg shadow-lg border border-blue-300">
           <h2 className="text-2xl font-bold text-white text-center mb-6">Technical Support</h2>
           <p className="text-center text-gray-300 mb-8">If you encounter any issues or have suggestions, please contact our technical team:</p>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="text-center">
+            <div className="text-center bg-blue-900/50 p-4 rounded-lg">
               <p className="font-semibold text-white">Swadhin Upadhyay</p>
               <p className="text-gray-400"><a href="mailto:swadhin457@gmail.com" className="text-blue-400 hover:underline">swadhin457@gmail.com</a></p>
               <p className="text-gray-400"><a href="tel:+918788546384" className="text-blue-400 hover:underline">+91 87885 46384</a></p>
             </div>
-            <div className="text-center">
+            <div className="text-center bg-blue-900/50 p-4 rounded-lg">
               <p className="font-semibold text-white">Nikita Bhushanwar</p>
               <p className="text-gray-400"><a href="mailto:niktabhushanwar03@gmail.com" className="text-blue-400 hover:underline">niktabhushanwar03@gmail.com</a></p>
               <p className-="text-gray-400"><a href="tel:+919767445679" className="text-blue-400 hover:underline">+91 97674 45679</a></p>
             </div>
-            <div className="text-center">
+            <div className="text-center bg-blue-900/50 p-4 rounded-lg">
               <p className="font-semibold text-white">Ethan Anthony</p>
               <p className="text-gray-400"><a href="mailto:e10anthony345@gmail.com" className="text-blue-400 hover:underline">e10anthony345@gmail.com</a></p>
               <p className="text-gray-400"><a href="tel:+918888080345" className="text-blue-400 hover:underline">+91 88880 80345</a></p>
