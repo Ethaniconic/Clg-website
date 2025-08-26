@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import React, { useState, useEffect } from 'react'
-import Logo from '../assets/Logo.jpeg'
-=======
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../assets/Logo.png'
->>>>>>> parent of 6e9f897 (Added full name of college to the navbar & Logo)
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
