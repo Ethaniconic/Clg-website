@@ -12,7 +12,7 @@ const images = [
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "src/assets/IDEA3_3.webp0",
+    src: "src/assets/IDEA3_3.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },

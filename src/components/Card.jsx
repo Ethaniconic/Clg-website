@@ -24,7 +24,7 @@ const Card = () => {
         {magazines.map((mag, idx) => {
           const CardContent = (
             <div
-              className="card w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
+              className="card w-80 bg-[#10194a] dark:bg-gray-800 shadow-xl border border-primary/20 dark:border-gray-700 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
             >
               <figure className="h-48 overflow-hidden rounded-t-3xl">
                 <img
@@ -34,10 +34,10 @@ const Card = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-blue-200">{mag.title}</h2>
-                <p className="text-blue-100">{mag.description}</p>
+                <h2 className="card-title text-blue-200 dark:text-white">{mag.title}</h2>
+                <p className="text-blue-100 dark:text-gray-300">{mag.description}</p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="badge bg-blue-900 text-blue-100 border-blue-700 px-3 py-2">
+                  <span className="badge bg-blue-900 text-blue-100 dark:bg-gray-700 dark:text-gray-200 border-blue-700 dark:border-gray-600 px-3 py-2">
                     {mag.month} {mag.year}
                   </span>
                 </div>
