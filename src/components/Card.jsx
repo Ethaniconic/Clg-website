@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import Mintroid from './Mintroid';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const magazines = [
   {
@@ -14,10 +17,23 @@ const magazines = [
     month: "Year",
     year: "2023-24",
     cover: "images/MINDROID%202023-24/MINDROID%202023-24_1.webp",
-    goto: "../../mindroid_23-24.html",
-    },
+    goto: "/Mintroid",
+  },
 ];
+
 const Card = () => {
+  const [showMintroid, setShowMintroid] = useState(false);
+
+  if (showMintroid) {
+    return (
+      <>
+        <Navbar />
+        <Mintroid />
+        <Footer />
+      </>
+    );
+  }
+
   return (
     <div className="w-full flex flex-col gap-8 items-center my-10 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="flex flex-col md:flex-row md:justify-between gap-8 items-center w-full">
@@ -25,6 +41,9 @@ const Card = () => {
           const CardContent = (
             <div
               className="card w-full sm:w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
+              onClick={() => {
+                if (idx === 1) setShowMintroid(true);
+              }}
             >
               <figure className="h-48 overflow-hidden rounded-t-3xl">
                 <img
@@ -45,8 +64,8 @@ const Card = () => {
             </div>
           );
 
-          // If goto is defined, wrap in <a>
-          return mag.goto ? (
+          // If goto is defined, wrap in <a> for first card only
+          return idx === 0 ? (
             <a key={idx} href={mag.goto}>
               {CardContent}
             </a>
